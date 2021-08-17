@@ -1,0 +1,81 @@
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(31, 38, 41);
+    color: white;
+    height: 100vh;
+}
+.content{
+    width: 500px;
+    margin: auto;
+    height: inherit;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.068);
+    box-shadow: 0 0 2px 0px rgb(195, 195, 195);
+}
+h1{
+    margin-bottom: 2rem;
+}
+div{
+    width: 100%;
+}
+form *{
+    margin-bottom: 1rem;
+}
+input[type="email"],input[type="password"],input[type="submit"]{
+    width: 100%;
+}
+input[type="email"],input[type="password"],input[type="submit"],input[type="text"]{
+    border: 2px solid crimson;
+    outline: none;
+    background-color: transparent;
+    padding: .8rem;
+    padding-left: 1rem;
+    border-radius: 25px;
+    color: wheat;
+    font-size: 1rem;
+}
+::placeholder{
+    color: white;
+    text-transform: capitalize;
+    font-family: cursive;
+    font-size: 1rem;
+}
+
+input[type="text"]{
+    width: 48%;
+}
+.nom_prenom{
+    display: flex;
+    justify-content: space-between;
+}
+input[type="submit"]{
+    color: white;
+    font-size: 1rem;
+    background: crimson;
+    font-weight: 900;
+}
+input[type="submit"]:hover,input[type="submit"]:active{
+    background-color: rgb(128, 25, 45);
+
+}
+form p{
+    text-align: center;
+}
+form p a{
+    text-decoration: none;
+    color: crimson;
+    margin-left: .9rem;
+}
+
+@media screen and (max-width:500px) {
+    .content{
+        width: 400px;
+    }
+}
