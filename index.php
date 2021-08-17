@@ -11,7 +11,7 @@
     <div class="content">
         <h1>Sign Up</h1>
 
-        <form action="requet.php" method="post">
+        <form action="./requet.php" method="post">
             <div class="nom_prenom">
                 <input type="text" name="nom"  placeholder="Nom" required>
                 <input type="text" name="prenom" placeholder="Prenom" required>
